@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Accordion, Card, Button } from 'react-bootstrap';
 import '../styles/Accordion.css'
 
 const CustomAccordion = ({ accordionData }) => {

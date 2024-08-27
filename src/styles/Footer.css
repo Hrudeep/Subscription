@@ -60,28 +60,28 @@
 
 @media (max-width: 767px) {
   .feedback {
-    padding: 20px; /* Reduce padding for smaller screens */
+    padding: 20px; 
   }
 
   .feedback-item {
-    max-width: 100%; /* Allow feedback items to take full width */
+    max-width: 100%; 
   }
 
   .questions {
-    font-size: 24px; /* Reduce font size for smaller screens */
+    font-size: 24px; 
   }
 
   .accordion-button {
-    padding: 15px; /* Increase padding for touch targets */
+    padding: 15px; 
   }
 
   .arrow-icon {
-    height: 18px; /* Adjust icon size for mobile */
-    margin-right: 8px; /* Adjust spacing */
+    height: 18px; 
+    margin-right: 8px; 
   }
 
   .accordion-content {
-    margin-left: 0; /* Remove left margin for mobile */
-    padding: 15px; /* Add padding for better readability */
+    margin-left: 0; 
+    padding: 15px; 
   }
 }

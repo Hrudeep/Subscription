@@ -1,23 +1,23 @@
 .navbar {
   margin-right: 10%;
-  backdrop-filter: blur(10px); /* Apply blur effect */
-  background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+  backdrop-filter: blur(10px); 
+  background-color: rgba(255, 255, 255, 0.2); 
 }
 
 .navbar-left {
-  margin-left: 40%; /* Position the accordion at 40% from the left */
+  margin-left: 40%; 
   display: flex;
   align-items: center;
   position: relative; 
 }
 
 .navbar-right {
-  margin-left: 10px; /* Space between accordion and Sign In button */
+  margin-left: 10px; 
   display: flex;
   align-items: center;
 }
 
-/* Border styling visible only on desktop */
+
 .border-style {
   position: relative;
   padding-bottom: 10px;
@@ -26,17 +26,17 @@
 .border-style::before {
   content: '';
   position: absolute;
-  bottom: 0; /* Position at the bottom of the navbar */
-  left: 35%; /* Start the border slightly before the accordion */
-  width: calc(65% - 10px); /* End the border near the Sign In button */
-  height: 2px; /* Thickness of the border */
-  background-color: #ffffff31; /* Border color */
+  bottom: 0; 
+  left: 35%; 
+  width: calc(65% - 10px);
+  height: 2px; 
+  background-color: #ffffff31; 
 }
 
-/* Button Styles */
+
 .btn-signin {
   background: none !important;
-  border: 2px solid #FFF !important; /* Border color */
+  border: 2px solid #FFF !important; 
   color: #FFF;
   padding: 5px 10px;
   font-size: 14px;
@@ -48,29 +48,29 @@
   margin-right: 5px;
 }
 
-/* Mobile Styles */
-@media (max-width: 767px) { /* Small devices (phones) */
+
+@media (max-width: 767px) { 
   .navbar-left, .navbar-right {
-    display: none; /* Hide these elements on mobile */
+    display: none; 
   }
 
   .navbar-toggler {
-    display: block; /* Ensure the toggle button is visible */
-    background: none; /* Optional: remove default button styling */
+    display: block; 
+    background: none; 
   }
 
   .hamburger-icon {
-    display: block; /* Ensure hamburger icon is visible */
-    color: #FFF; /* Ensure hamburger icon is white */
-    font-size: 24px; /* Adjust size as needed */
+    display: block; 
+    color: #FFF; 
+    font-size: 24px; 
   }
 
   .border-style {
-    display: none; /* Remove the border on mobile */
+    display: none; 
   }
   .border-style::before {
     content: '';
     position: absolute;
-    height: 0px; /* Thickness of the border */
+    height: 0px; 
   }
 }

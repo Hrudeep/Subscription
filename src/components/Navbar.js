@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar, Nav, Button, Offcanvas } from 'react-bootstrap';
-import { FaBars } from 'react-icons/fa'; // Ensure the icon package is installed
+import { Navbar, Button, Offcanvas } from 'react-bootstrap';
+import { FaBars } from 'react-icons/fa'; 
 import CustomAccordion from '../components/CustomAccordion';
 import { data } from '../data/accordionData';
 import '../styles/Navbar.css';

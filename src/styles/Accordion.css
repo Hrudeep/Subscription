@@ -1,4 +1,4 @@
-/* Accordion Container */
+
 .style{
   left:50%;
 }
@@ -7,30 +7,30 @@
     border: none !important;
   }
   
-  /* Accordion Button */
+
   .accordion-button {
     background-color: transparent !important;
-    color: #fff !important; /* White text color */
+    color: #fff !important; 
     border: none !important;
     background-image: none !important;
   }
   
-  /* Accordion Button Focus State */
+ 
   .accordion-button:focus {
     box-shadow: none !important;
     color:aliceblue !important; 
   }
   
-  /* Accordion Button Not Collapsed State */
+ 
   .accordion-button:not(.collapsed) {
-    color:aliceblue !important; /* White text color */
+    color:aliceblue !important; 
     background-color: transparent !important;
   }
   
-  /* Accordion Collapse Container */
+  
   .accordion-collapse {
     background-color: transparent !important;
-    color:aliceblue !important; /* White text color for content inside collapse */
+    color:aliceblue !important; 
   }
 
   
@@ -39,20 +39,20 @@
   }
   
   .accordion-button {
-    color: #fff; /* Text color */
-    background-color: transparent; /* Background color */
+    color: #fff; 
+    background-color: transparent; 
   }
   
   .accordion-button:not(.collapsed) {
-    color: #fff; /* Ensure color stays white when expanded */
+    color: #fff; 
   }
   
   .accordion-button.collapsed::after {
-    transform: rotate(0deg); /* Rotate back to default for collapsed */
+    transform: rotate(0deg); 
   }
   
   .accordion-button::after {
-    transform: rotate(180deg); /* Rotate chevron when expanded */
+    transform: rotate(180deg); 
   }
   
   .accordionContainer{

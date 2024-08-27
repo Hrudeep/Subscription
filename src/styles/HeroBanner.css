@@ -1,21 +1,21 @@
 .hero-banner {
     position: relative;
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    height: 100vh; /* Full viewport height */
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
     background-size: cover;
     background-position: center;
-    background-image: url('../Assets/Background.png'); /* Add your background image */
+    background-image: url('../Assets/Background.png'); 
   }
   
   .hero-content {
     text-align: center;
-    color: white; /* Ensure text color contrasts with the background */
-    z-index: 1; /* Ensures content is above any background elements */
+    color: white; 
+    z-index: 1; 
   }
   
-  /* Optional: Add an overlay to darken the background image */
+  
   .hero-banner::before {
     content: '';
     position: absolute;
@@ -23,6 +23,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
-    z-index: 0; /* Keeps the overlay behind the content */
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 0; 
   }

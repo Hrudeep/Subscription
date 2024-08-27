@@ -12,14 +12,14 @@
 }
 
 .hero-banner {
-  padding: 100px 0; /* Adjust as needed */
+  padding: 100px 0; 
 }
 
 .navbar {
-  background: transparent; /* Ensures navbar blends with background */
+  background: transparent; 
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .hero-banner {
     padding: 50px 0;
