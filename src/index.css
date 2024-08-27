@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "fontspring";   
+  src:
+    url("../src/Fonts/Fontspring-DEMO-altivo-black.otf") format("opentype");
+}
+
+body {
+  margin: 0;
+  font-family: 'fontspring', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'fontspring', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

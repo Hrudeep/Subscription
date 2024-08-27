@@ -1,0 +1,24 @@
+.feature-card {
+    background-color: #000; /* White background for the cards */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 179px;
+}
+
+.feature-card img {
+    width: 40px; /* Adjust image size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.feature-card .title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #c0a991;
+}
+
+.feature-card .content {
+    color: gray;
+    margin:auto
+}

@@ -1,0 +1,37 @@
+.app-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.background-container {
+  background-image: url('../Assets/Background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: fit-content;
+}
+
+.hero-banner {
+  padding: 100px 0; /* Adjust as needed */
+}
+
+.navbar {
+  background: transparent; /* Ensures navbar blends with background */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 50px 0;
+  }
+
+  .description {
+    max-width: 100%; /* Full width on mobile */
+    padding: 10px;
+  }
+
+  .features {
+    max-width: 100%; /* Full width on mobile */
+    padding: 10px;
+  }
+}

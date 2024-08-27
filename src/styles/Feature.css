@@ -1,0 +1,18 @@
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 20px; /* Space between the grid items */
+    padding: 20px; /* Padding around the grid */
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+      grid-gap: 20px; /* Space between the grid items */
+      padding: 20px; /* Padding around the grid */
+      margin: 0; /* Remove default margin */
+      width: 100%; /* Ensure full width for mobile */
+    }
+  }

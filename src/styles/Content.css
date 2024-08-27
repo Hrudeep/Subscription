@@ -1,0 +1,220 @@
+/* Desktop Styles - No Changes */
+.main {
+  background-color: #181a18;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.features {
+  max-width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 40px;
+}
+
+.border-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid #c0a991;
+  background-color: #181a18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #c0a991;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.border-container::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #c0a991;
+  top: 50%;
+  left: 15px;
+  bottom: -64px;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.border-container:first-child::before {
+  top: 50%;
+}
+
+.border-container:last-child::before {
+  display: none;
+}
+
+.content {
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.teenystar {
+  display: flex;
+  align-items: end;
+  height: 45px;
+  gap: 4px;
+}
+
+.teenystar2 {
+  align-self: flex-start;
+}
+
+.content-heading {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.content-sentence {
+  font-size: 18px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+  border-color: #ffffff4a;
+}
+
+.btn-get-started {
+  padding: 9px;
+  background-color: #e76b13;
+  color: #fff;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.btn-learn-more {
+  padding: 4px;
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid aliceblue;
+  display: flex;
+  align-items: center;
+}
+
+.btn-get-learn {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 40px;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .main {
+    flex-direction: column; /* Set flex direction to column for mobile */
+  }
+
+  .features {
+    order: 1 !important; /* Make Features section appear first */
+    width: 100%; /* Ensure Features section takes full width */
+    margin-top: 0; /* Remove top margin */
+  }
+
+  .progress-list {
+    order: 2 !important; /* Make Progress List appear after Features */
+    width: 100%; /* Ensure Progress List section takes full width */
+    margin-top: 20px; /* Add some space between Features and Progress List */
+  }
+
+  .teenystar {
+    justify-content: space-between;
+  }
+
+  .teenystar img:nth-child(2) {
+    display: none; /* Hide the middle star on mobile */
+  }
+
+  .description {
+    max-width: 100%;
+    padding: 10px; /* Adjust padding for mobile */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-heading {
+    text-align: center;
+    font-size: 24px; /* Reduce font size for mobile */
+    margin-top: 10px;
+    width: 100%; /* Ensure the heading takes full width */
+  }
+
+  .content-sentence {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px; /* Reduce font size for mobile */
+  }
+
+  .btn-get-learn {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%; /* Ensure the buttons take full width */
+  }
+
+  .btn-get-started, .btn-learn-more {
+    width: 100%;
+    text-align: center;
+  }
+  .btn-get-started {
+    position: fixed; /* Fix the button to the viewport */
+    bottom: 0; /* Align it to the bottom of the screen */
+    left: 0; /* Align it to the left edge */
+    width: 100%; /* Full width */
+    background-color: rgba(231, 107, 19, 0.8); /* Semi-transparent background to show blur */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    color: #fff; /* Text color */
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding inside the button */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for better visibility */
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+
+
+  .arrow-icon {
+    margin-left: 8px; /* Space between text and icon */
+  }
+
+  .btn-learn-more {
+    display: none; /* Hide the Learn More button on mobile */
+  }
+
+}
